@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 625%;
+}
+
+body {
+  font-size: .15em;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", YuGothic, YuGothicM, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  line-height: 1.8;
+  color: #333;
+}
+
+#canvas-wrapper {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 50px auto;
+}
+
+.btn-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.btn-wrapper button{
+  font-size: 0.2rem;
+  margin-right: 40px;
+  text-align: center;
+  padding: 0.2em 20px;
+  background-color: #fff;
+  color: #dbbc5e;
+  border: #dbbc5e 3px solid;
+  border-radius: 3px;
+  ;
+}
+
+.btn-wrapper button.isSelected{
+  /* background-color:#EF8380; */
+  background-color:#dbbc5e;
+  color: #fff;
+}
+
+#canvas-wrapper input {
+display: block;
+width: 60%;
+margin: 30px auto;
+}
+
+#canvas-wrapper input[type="range"]{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #c7c7c7;
+  height: 3px;
+}
+
+#canvas-wrapper input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+ /* position: relative;
+  border: none;
+  width: 16px;
+  height: 16px; */
+  display: block;
+  background-color: #262626;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  /*margin: 0 auto; */
+}
+
+canvas{
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px){
+  #canvas-wrapper {
+    height: 460px;
+    max-height: 50vh;
+    margin: 0px auto 10px;
+  }
+  #canvas-wrapper input {
+    width: 80%;
+    margin: 20px auto 30px;
+  } 
+
+  .btn-wrapper button{
+    margin-right: 20px;
+    padding: 0.2em 10px;
+  }
+}
